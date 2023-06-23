@@ -27,6 +27,159 @@ onMounted(() => {
     targets: ".text-hero-sm",
     translateX: 255,
   });
+  // anime({
+  //   targets: ".text-join",
+  //   keyframes: [
+  //     {scale: 1.2},
+  //     {scale: 1.1},
+  //     {scale: 1.2},
+
+  //   ],
+  //   duration: 7000,
+  //   easing: "easeInOutSine(1, .8)",
+  //   loop: true,
+  // });
+
+  anime({
+    targets: "#chain",
+    keyframes: [
+      { rotate: 100, translateX: 0 },
+      { translateX: 100 },
+      { translateY: -10, rotate: 0 },
+      { rotate: 120 },
+      { translateX: -100, rotate: 13 },
+    ],
+
+    duration: 15000,
+    easing: "easeOutElastic(1, 1)",
+    loop: true,
+  });
+  anime({
+    targets: ".and",
+    keyframes: [
+      // {rotateX:100, translateX: 0},
+      // {translateX: 100},
+      // {translateY: -10, rotate: 0},
+      { rotate: 10 },
+      { rotate: -14 },
+      // {translateX: -100, rotate: 13},
+    ],
+
+    duration: 10000,
+    easing: "easeOutElastic(1, 1)",
+    loop: true,
+  });
+
+  anime({
+    targets: ".cling",
+    translateX: function () {
+      return anime.random(0, 270);
+    },
+    keyframes: [
+      { rotate: 12 },
+      { translateX: -12 },
+      { rotate: -12 },
+      { rotate: 12 },
+
+      { translateX: 12 },
+      { rotate: -12 },
+      { translateY: 12 },
+      { rotate: 0 },
+      { rotate: -12 },
+      { translateY: -12 },
+    ],
+    duration: 10000,
+    easing: "easeOutElastic(1, 1)",
+    loop: true,
+  });
+  anime({
+    targets: ".card1",
+    keyframes: [
+      { rotate: 8 },
+      { rotate: -8 },
+      { rotate: 8 },
+      { rotate: -8 },
+      { rotate: 0 },
+    ],
+    duration: 15000,
+    easing: "easeOutElastic(1, 1)",
+    loop: true,
+  });
+
+  anime({
+    targets: ".card2",
+    keyframes: [
+      { rotate: -8 },
+      { rotate: 8 },
+      { rotate: -8 },
+      { rotate: 8 },
+      { rotate: 0 },
+      { rotate: -8 },
+    ],
+    duration: 15000,
+    easing: "easeOutElastic(1, 1)",
+    loop: true,
+  });
+
+  anime({
+    targets: ".card3",
+    keyframes: [
+      { rotate: 8 },
+      { rotate: -8 },
+      { rotate: 8 },
+      { rotate: 0 },
+      { rotate: 8 },
+      { rotate: -8 },
+    ],
+    duration: 15000,
+    easing: "easeOutElastic(1, 1)",
+    loop: true,
+  });
+
+  anime({
+    targets: ".card4",
+    keyframes: [
+      { rotate: -8 },
+      { rotate: 10 },
+      { rotate: 0 },
+      { rotate: 7 },
+      { rotate: -8 },
+      { rotate: 9 },
+    ],
+    duration: 15000,
+    easing: "easeOutElastic(1, 1)",
+    loop: true,
+  });
+
+  anime({
+    targets: ".card5",
+    keyframes: [
+      { rotate: 4 },
+      { rotate: -8 },
+      { rotate: 8 },
+      { rotate: -8 },
+      { rotate: 0 },
+      { rotate: 8 },
+    ],
+    duration: 15000,
+    easing: "easeOutElastic(1, 1)",
+    loop: true,
+  });
+
+  anime({
+    targets: ".card6",
+    keyframes: [
+      { rotate: -7 },
+      { rotate: 13 },
+      { rotate: -8 },
+      { rotate: 10 },
+      { rotate: -8 },
+      { rotate: 0 },
+    ],
+    duration: 15000,
+    easing: "easeOutElastic(1, 1)",
+    loop: true,
+  });
 });
 </script>
 
@@ -57,7 +210,7 @@ onMounted(() => {
 
   <div
     id="main"
-    class="bg-[#FEE9CE] min-h-[900px] -mt-2 px-5 lg:px-20 relative">
+    class="bg-[#FEE9CE] h-full -mt-2 px-5 pb-20 lg:pb-32 lg:px-20 relative">
     <div class="hidden lg:block">
       <div
         class="text-hero text-[4em] lg:text-[8em] font-libre font-bold pt-10 flex flex-col lg:flex-row relative -top-[2em]">
@@ -82,8 +235,8 @@ onMounted(() => {
     <div class="mt-20 relative">
       <div class="flex relative">
         <button
-          class="px-20 py-7 border-2 border-black bg-white text-[30px] font-inria font-bold z-10 hover:translate-x-2 hover:translate-y-2 transition">
-          Let's Join
+          class="btn-join px-20 py-7 border-2 border-black bg-white text-[30px] font-inria font-bold z-10 hover:translate-x-2 hover:translate-y-2 transition">
+          <p class="text-join">Let's Join</p>
         </button>
         <button
           class="px-20 py-7 border-2 border-black bg-white text-[30px] font-inria font-bold text-white absolute top-2 left-2">
@@ -121,7 +274,7 @@ onMounted(() => {
   <!-- photos galleries -->
   <div
     id="galleries"
-    class="bg-[#A4E7C6] -mt-2 py-20 px-5 lg:px-20 gap-12 lg:flex overflow-x-auto">
+    class="bg-[#A4E7C6] -mt-2 py-20 px-5 lg:px-20 gap-4 lg:gap-12 flex flex-col lg:flex-row overflow-x-auto justify-center">
     <div
       data-aos="fade-right"
       class="rounded-xl shadow-lg overflow-hidden mb-10 w-full lg:w-[620px] h-[360px] font-inria font-semibold bg-slate-900 sm:mb-0">
@@ -188,30 +341,35 @@ onMounted(() => {
     id="galleries"
     class="bg-[#F7D519] -mt-2 pt-16 pb-16 lg:pb-0 lg:pt-32 px-5 lg:px-20 border-b-4 border-black relative">
     <h1
-      class="text-center font-bebas font-bold text-5xl lg:text-8xl text-[#1B1719] z-50">
+      data-aos="fade-up"
+      class="text-center font-bebas font-bold text-5xl lg:text-8xl text-[#1B1719] relative z-30">
       Connecting the dots for an engaging <br />
       collaboration experiences
     </h1>
 
-    <div id="chain" class="absolute top-4 left-5 lg:left-10">
+    <div
+      data-aos="fade-down-right"
+      id="chain"
+      class="absolute top-4 left-5 lg:left-10">
       <!-- <IconChain /> -->
-      <img
-        class="w-32 lg:w-72 opacity-25 lg:opacity-100"
-        src="../assets/Chain.svg"
-        alt="" />
+      <img class="w-32 lg:w-72 opacity-25" src="../assets/Chain.svg" alt="" />
     </div>
 
-    <div id="cling" class="absolute top-10 lg:top-20 right-5 lg:right-48">
-      <img class="w-16 lg:w-32" src="../assets/Cling.png" alt="" />
+    <div
+      data-aos="fade-down-left"
+      class="cling absolute top-10 lg:top-20 right-5 lg:right-48">
+      <img class="w-16 lg:w-32 opacity-25" src="../assets/Cling.png" alt="" />
     </div>
 
     <div class="mt-10 lg:mt-20 lg:grid lg:grid-cols-3 lg:grid-flow-col">
-      <div class="relative lg:top-28">
-        <img class="w-[500px]" src="../assets/HandConnect.png" alt="" />
+      <div data-aos="fade-up" class="lg:relative lg:top-28">
+        <img class="w-[500px] mx-auto" src="../assets/HandConnect.png" alt="" />
       </div>
 
       <p
-        class="mt-5 lg:mt-0 text-center lg:text-left lg:leading-relaxed font-inria font-bold text-xl lg:text-[30px]">
+        data-aos="fade-right"
+        data-aos-delay="400"
+        class="mt-5 lg:ml-7 lg:mt-0 text-center lg:text-left lg:leading-relaxed font-inria font-bold text-xl lg:text-[30px]">
         Together we build DNCC and become students who are more disciplined,
         accomplished, creative and have noble character.
         <br />
@@ -231,19 +389,25 @@ onMounted(() => {
     id="devisi"
     class="bg-[#8955FF] -mt-2 pt-10 lg:pt-44 pb-16 px-5 lg:px-20 border-b-4 border-black">
     <h1
+      data-aos="fade-down"
       class="text-center font-bebas font-bold text-5xl lg:text-8xl text-white z-50">
-      Connecting the dots for an engaging <br />
-      collaboration experiences
+      This is our Devision.
     </h1>
 
-    <p class="font-inria text-center text-white font-thin lg:text-[27px] mt-10">
+    <p
+      data-aos="fade-down"
+      data-aos-delay="200"
+      class="font-inria text-center text-white font-thin lg:text-[27px] mt-10">
       “Pursue your passion, select a mission, and elevate your skills to new
       heights.”
     </p>
 
-    <div class="mt-20 flex flex-col lg:flex-row justify-center">
+    <div
+      data-aos="fade-down"
+      data-aos-delay="300"
+      class="mt-20 mx-auto px-5 flex flex-col lg:flex-row justify-center">
       <div
-        class="card bg-yellow-200 w-72 h-64 border-4 border-black relative rotate-6 shadow-lg shadow-black">
+        class="card1 bg-yellow-200 mx-auto lg:mx-0 w-72 h-64 border-4 border-black relative rotate-6 shadow-lg shadow-black">
         <span>
           <IconWeb />
         </span>
@@ -251,8 +415,9 @@ onMounted(() => {
           Web Dev
         </p>
       </div>
+
       <div
-        class="card bg-orange-400 w-72 h-64 border-4 border-black relative -rotate-6 -ml-8 shadow-lg shadow-black">
+        class="card2 bg-orange-400 mx-auto lg:mx-0 w-72 h-64 border-4 border-black relative -rotate-6 lg:-ml-8 shadow-lg shadow-black">
         <div class="ml-5 mt-5">
           <IconPhone />
         </div>
@@ -261,7 +426,7 @@ onMounted(() => {
         </p>
       </div>
       <div
-        class="card bg-sky-300 w-72 h-64 border-4 border-black relative rotate-6 -ml-8 shadow-lg shadow-black">
+        class="card3 bg-sky-300 mx-auto lg:mx-0 w-72 h-64 border-4 border-black relative rotate-6 lg:-ml-8 shadow-lg shadow-black">
         <div class="ml-5 mt-5">
           <IconGame />
         </div>
@@ -270,7 +435,7 @@ onMounted(() => {
         </p>
       </div>
       <div
-        class="card bg-teal-500 w-72 h-64 border-4 border-black relative -rotate-6 -ml-8 shadow-lg shadow-black">
+        class="card4 bg-teal-500 mx-auto lg:mx-0 w-72 h-64 border-4 border-black relative -rotate-6 lg:-ml-8 shadow-lg shadow-black">
         <div class="ml-5 mt-5">
           <IconData />
         </div>
@@ -280,7 +445,7 @@ onMounted(() => {
       </div>
 
       <div
-        class="block lg:hidden card bg-purple-400 w-72 h-64 border-4 border-black relative rotate-6 -ml-8 shadow-lg shadow-black">
+        class="block lg:hidden card5 bg-purple-400 mx-auto lg:mx-0 w-72 h-64 border-4 border-black relative rotate-6 lg:-ml-8 shadow-lg shadow-black">
         <div class="ml-5 mt-5">
           <IconNetwork />
         </div>
@@ -289,7 +454,7 @@ onMounted(() => {
         </p>
       </div>
       <div
-        class="block lg:hidden card bg-orange-200 w-72 h-64 border-4 border-black relative -rotate-6 -ml-8 shadow-lg shadow-black">
+        class="block lg:hidden card6 bg-orange-200 mx-auto lg:mx-0 w-72 h-64 border-4 border-black relative -rotate-6 lg:-ml-8 shadow-lg shadow-black">
         <div class="ml-5 mt-5">
           <IconPhoto />
         </div>
@@ -298,9 +463,12 @@ onMounted(() => {
         </p>
       </div>
     </div>
-    <div class="mt-20 lg:flex justify-center hidden">
+    <div
+      data-aos="fade-down"
+      data-aos-delay="400"
+      class="mt-20 lg:flex justify-center hidden">
       <div
-        class="card bg-purple-400 w-72 h-64 border-4 border-black relative rotate-6 -ml-8 shadow-lg shadow-black">
+        class="card5 bg-purple-400 w-72 h-64 border-4 border-black relative rotate-6 -ml-8 shadow-lg shadow-black">
         <div class="ml-5 mt-5">
           <IconNetwork />
         </div>
@@ -309,7 +477,7 @@ onMounted(() => {
         </p>
       </div>
       <div
-        class="card bg-orange-200 w-72 h-64 border-4 border-black relative -rotate-6 -ml-8 shadow-lg shadow-black">
+        class="card6 bg-orange-200 w-72 h-64 border-4 border-black relative -rotate-6 -ml-8 shadow-lg shadow-black">
         <div class="ml-5 mt-5">
           <IconPhoto />
         </div>
@@ -358,33 +526,74 @@ onMounted(() => {
     id="register"
     class="-mt-2 bg-[#FEE9CE] pt-20 h-[600px] border-b-4 border-black">
     <h1
+      data-aos="fade-down"
       class="text-center font-bebas font-bold text-5xl lg:text-8xl text-black z-50">
       REGISTER DROP YOUR PROFILE
     </h1>
   </div>
 
-  <div id="register" class="bg-[#59CB35] pt-20 lg:px-20">
-    <div class="flex">
-      <div class="">
+  <div id="register" class="bg-[#59CB35] py-20 px-5 lg:px-20">
+    <div class="lg:flex justify-center">
+      <div class="hidden lg:block">
         <h1
-          class="font-bebas font-bold text-9xl lg:text-[23em] text-black z-50">
+          data-aos="fade-down"
+          class="font-bebas font-bold text-8xl lg:text-[21em] text-black z-50">
           LET'S JOIN
         </h1>
         <div class="flex justify-between">
           <h1
-            class="font-bebas font-bold text-9xl lg:text-[30em] text-black z-50">
+            data-aos="fade-right"
+            data-aos-delay="300"
+            class="hidden lg:block font-bebas font-bold text-8xl lg:text-[30em] text-black z-50">
             👀
           </h1>
           <h1
-            class="font-bebas font-bold text-9xl lg:text-[30em] text-black z-50">
+            data-aos="fade-down"
+            class="and font-bebas font-bold text-8xl lg:text-[30em] text-black z-50">
             AND
           </h1>
         </div>
-         <h1
-          class="font-bebas font-bold text-9xl lg:text-[9em] text-black z-50 tracking-wide
-">
+        <h1
+          data-aos="fade-down"
+          data-aos-delay="500"
+          class="font-bebas font-bold text-8xl lg:text-[8em] text-black z-50 tracking-wide">
           MAKE A CHANGE FOR YOU
         </h1>
+      </div>
+      <div class="block lg:hidden">
+        <h1
+          class="font-bebas font-bold text-8xl lg:text-[21em] text-black z-50"
+          align="justify">
+          LET'S JOIN AND MAKE A CHANGE FOR YOU
+        </h1>
+      </div>
+      <div class="relative mt-10 lg:mt-0">
+        <div
+          class="text-center bg-white w-full lg:h-[57em] lg:ml-5 rounded-[40px] p-5 lg:p-20 border-4 border-black relative z-10 lg:hover:translate-x-6 hover:translate-y-6 transition">
+          <h1
+            class="font-inria text-2xl lg:text-4xl font-bold leading-relaxed lg:mt-32">
+            TALK WITH<br />
+            CONTACT PERSON
+          </h1>
+
+          <p
+            class="font-inria text-2xl lg:text-4xl leading-relaxed mt-10 lg:mt-20">
+            ZIDAN <br />
+            0812-2518-3356
+          </p>
+          <p
+            class="font-inria text-2xl lg:text-4xl leading-relaxed mt-10 lg:mt-10">
+            SHIVA <br />
+            0895-3633-75272
+          </p>
+        </div>
+        <div
+          class="bg-[#A4E48F] w-full lg:h-[57em] lg:ml-5 rounded-[40px] p-20 border-4 border-black absolute lg:-right-11 top-6">
+          <h1>
+            TALK WITH<br />
+            CONTACT PERSON
+          </h1>
+        </div>
       </div>
     </div>
   </div>
