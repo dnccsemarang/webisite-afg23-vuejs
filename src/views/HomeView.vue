@@ -234,10 +234,10 @@ onMounted(() => {
 
     <div class="mt-20 relative">
       <div class="flex relative">
-        <button
+        <a href="#register"
           class="btn-join px-20 py-7 border-2 border-black bg-white text-[30px] font-inria font-bold z-10 hover:translate-x-2 hover:translate-y-2 transition">
           <p class="text-join">Let's Join</p>
-        </button>
+      </a>
         <button
           class="px-20 py-7 border-2 border-black bg-white text-[30px] font-inria font-bold text-white absolute top-2 left-2">
           Let's Join
