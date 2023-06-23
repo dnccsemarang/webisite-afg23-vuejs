@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         inria: ["Inria Sans", "sans-serif"],
         libre: ["Libre Baskerville", "serif"],
+        bebas: ["Bebas Neue", "cursive"],
       },
       scale: {
         "-100": "-1",
