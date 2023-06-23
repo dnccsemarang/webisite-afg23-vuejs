@@ -4,6 +4,11 @@ import IconStar from "../components/icons/IconStar.vue";
 import IconHeart from "../components/icons/IconHeart.vue";
 import IconChain from "../components/icons/IconChain.vue";
 import IconWeb from "../components/icons/IconWeb.vue";
+import IconPhone from "../components/icons/IconPhone.vue";
+import IconPhoto from "../components/icons/IconPhoto.vue";
+import IconData from "../components/icons/IconData.vue";
+import IconGame from "../components/icons/IconGame.vue";
+import IconNetwork from "../components/icons/IconNetwork.vue";
 import anime from "animejs/lib/anime.es.js";
 
 onMounted(() => {
@@ -181,7 +186,7 @@ onMounted(() => {
   <!-- Connecting -->
   <div
     id="galleries"
-    class="bg-[#F7D519] -mt-2 pt-16 pb-16 lg:pb-0 lg:pt-32 px-20 border-b-4 border-black relative">
+    class="bg-[#F7D519] -mt-2 pt-16 pb-16 lg:pb-0 lg:pt-32 px-5 lg:px-20 border-b-4 border-black relative">
     <h1
       class="text-center font-bebas font-bold text-5xl lg:text-8xl text-[#1B1719] z-50">
       Connecting the dots for an engaging <br />
@@ -224,7 +229,7 @@ onMounted(() => {
   <!-- Devisi -->
   <div
     id="devisi"
-    class="bg-[#8955FF] -mt-2 pt-10 lg:pt-44 pb-10 px-20 border-b-4 border-black">
+    class="bg-[#8955FF] -mt-2 pt-10 lg:pt-44 pb-16 px-5 lg:px-20 border-b-4 border-black">
     <h1
       class="text-center font-bebas font-bold text-5xl lg:text-8xl text-white z-50">
       Connecting the dots for an engaging <br />
@@ -236,10 +241,150 @@ onMounted(() => {
       heights.”
     </p>
 
-    <div class="mt-20">
-      <div class="card bg-yellow-200 w-72 h-64 border-4 border-black relative">
-        <IconWeb />
-        <p class="absolute font-inria font-bold text-3xl bottom-0 mb-10 ml-10">Web Dev</p>
+    <div class="mt-20 flex flex-col lg:flex-row justify-center">
+      <div
+        class="card bg-yellow-200 w-72 h-64 border-4 border-black relative rotate-6 shadow-lg shadow-black">
+        <span>
+          <IconWeb />
+        </span>
+        <p class="absolute font-inria font-bold text-3xl bottom-0 mb-10 ml-10">
+          Web Dev
+        </p>
+      </div>
+      <div
+        class="card bg-orange-400 w-72 h-64 border-4 border-black relative -rotate-6 -ml-8 shadow-lg shadow-black">
+        <div class="ml-5 mt-5">
+          <IconPhone />
+        </div>
+        <p class="absolute font-inria font-bold text-3xl bottom-0 mb-10 ml-10">
+          Mobile Dev
+        </p>
+      </div>
+      <div
+        class="card bg-sky-300 w-72 h-64 border-4 border-black relative rotate-6 -ml-8 shadow-lg shadow-black">
+        <div class="ml-5 mt-5">
+          <IconGame />
+        </div>
+        <p class="absolute font-inria font-bold text-3xl bottom-0 mb-10 ml-10">
+          Game Dev
+        </p>
+      </div>
+      <div
+        class="card bg-teal-500 w-72 h-64 border-4 border-black relative -rotate-6 -ml-8 shadow-lg shadow-black">
+        <div class="ml-5 mt-5">
+          <IconData />
+        </div>
+        <p class="absolute font-inria font-bold text-3xl bottom-0 mb-10 ml-10">
+          Data Analyst
+        </p>
+      </div>
+
+      <div
+        class="block lg:hidden card bg-purple-400 w-72 h-64 border-4 border-black relative rotate-6 -ml-8 shadow-lg shadow-black">
+        <div class="ml-5 mt-5">
+          <IconNetwork />
+        </div>
+        <p class="absolute font-inria font-bold text-3xl bottom-0 mb-10 ml-10">
+          Networking
+        </p>
+      </div>
+      <div
+        class="block lg:hidden card bg-orange-200 w-72 h-64 border-4 border-black relative -rotate-6 -ml-8 shadow-lg shadow-black">
+        <div class="ml-5 mt-5">
+          <IconPhoto />
+        </div>
+        <p class="absolute font-inria font-bold text-3xl bottom-0 mb-10 ml-10">
+          Multimedia
+        </p>
+      </div>
+    </div>
+    <div class="mt-20 lg:flex justify-center hidden">
+      <div
+        class="card bg-purple-400 w-72 h-64 border-4 border-black relative rotate-6 -ml-8 shadow-lg shadow-black">
+        <div class="ml-5 mt-5">
+          <IconNetwork />
+        </div>
+        <p class="absolute font-inria font-bold text-3xl bottom-0 mb-10 ml-10">
+          Networking
+        </p>
+      </div>
+      <div
+        class="card bg-orange-200 w-72 h-64 border-4 border-black relative -rotate-6 -ml-8 shadow-lg shadow-black">
+        <div class="ml-5 mt-5">
+          <IconPhoto />
+        </div>
+        <p class="absolute font-inria font-bold text-3xl bottom-0 mb-10 ml-10">
+          Multimedia
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <marquee
+    class="font-inria font-bold text-[30px] border-black border-b-4 py-3"
+    scrollamount="5"
+    directives="right"
+    behavior="alternate">
+    <div class="flex flex-row">
+      <p>REGISTER NOW</p>
+      <span class="mx-8 self-center"><IconHeart color="black" /></span>
+      <p>REGISTER NOW</p>
+      <span class="mx-8 self-center"><IconHeart color="black" /></span>
+      <p>REGISTER NOW</p>
+      <span class="mx-8 self-center"><IconHeart color="black" /></span>
+      <p>REGISTER NOW</p>
+      <span class="mx-8 self-center"><IconHeart color="black" /></span>
+      <p>REGISTER NOW</p>
+      <span class="mx-8 self-center"><IconHeart color="black" /></span>
+      <p>REGISTER NOW</p>
+      <span class="mx-8 self-center"><IconHeart color="black" /></span>
+      <p>REGISTER NOW</p>
+      <span class="mx-8 self-center"><IconHeart color="black" /></span>
+      <p>REGISTER NOW</p>
+      <span class="mx-8 self-center"><IconHeart color="black" /></span>
+      <p>REGISTER NOW</p>
+      <span class="mx-8 self-center"><IconHeart color="black" /></span>
+      <p>REGISTER NOW</p>
+      <span class="mx-8 self-center"><IconHeart color="black" /></span>
+      <p>REGISTER NOW</p>
+      <span class="mx-8 self-center"><IconHeart color="black" /></span>
+      <p>REGISTER NOW</p>
+    </div>
+  </marquee>
+
+  <!-- Register Form -->
+
+  <div
+    id="register"
+    class="-mt-2 bg-[#FEE9CE] pt-20 h-[600px] border-b-4 border-black">
+    <h1
+      class="text-center font-bebas font-bold text-5xl lg:text-8xl text-black z-50">
+      REGISTER DROP YOUR PROFILE
+    </h1>
+  </div>
+
+  <div id="register" class="bg-[#59CB35] pt-20 lg:px-20">
+    <div class="flex">
+      <div class="">
+        <h1
+          class="font-bebas font-bold text-9xl lg:text-[23em] text-black z-50">
+          LET'S JOIN
+        </h1>
+        <div class="flex justify-between">
+          <h1
+            class="font-bebas font-bold text-9xl lg:text-[30em] text-black z-50">
+            👀
+          </h1>
+          <h1
+            class="font-bebas font-bold text-9xl lg:text-[30em] text-black z-50">
+            AND
+          </h1>
+        </div>
+         <h1
+          class="font-bebas font-bold text-9xl lg:text-[9em] text-black z-50 tracking-wide
+">
+          MAKE A CHANGE FOR YOU
+        </h1>
       </div>
     </div>
   </div>

@@ -1,10 +1,19 @@
 <template>
   <svg
-    width="90"
-    height="88"
-    viewBox="0 0 90 88"
-    fill="none"   xmlns="http://www.w3.org/2000/svg">
-  
+    width="100"
+    height="99"
+    viewBox="0 0 100 99"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <!-- <rect
+      x="2.99771"
+      y="3"
+      width="92.9354"
+      height="92.5074"
+      rx="17"
+      transform="matrix(1 0 -0.000764575 1 0.164891 0.103517)"
+      stroke="black"
+      stroke-width="6" /> -->
     <path
       d="M37.0732 53.3671L37.0687 59.2302L18.812 50.2757L18.8153 45.9583L37.0856 37.1637L37.0813 42.8136L25.6074 48.037L37.0732 53.3671Z"
       fill="black" />
