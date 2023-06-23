@@ -524,12 +524,13 @@ onMounted(() => {
 
   <div
     id="register"
-    class="-mt-2 bg-[#FEE9CE] pt-20 h-[600px] border-b-4 border-black">
+    class="-mt-2 bg-[#FEE9CE] pt-20 h-full pb-16 border-b-4 border-black">
     <h1
       data-aos="fade-down"
       class="text-center font-bebas font-bold text-5xl lg:text-8xl text-black z-50">
       REGISTER DROP YOUR PROFILE
     </h1>
+    <div class="mt-16" id="ff-compose"></div>
   </div>
 
   <div id="register" class="bg-[#59CB35] py-20 px-5 lg:px-20">
