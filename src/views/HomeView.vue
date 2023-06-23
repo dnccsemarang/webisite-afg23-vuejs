@@ -3,7 +3,7 @@ import { onMounted } from "vue";
 import IconStar from "../components/icons/IconStar.vue";
 import IconHeart from "../components/icons/IconHeart.vue";
 import IconChain from "../components/icons/IconChain.vue";
-import IconCling from "../components/icons/IconCling.vue";
+import IconWeb from "../components/icons/IconWeb.vue";
 import anime from "animejs/lib/anime.es.js";
 
 onMounted(() => {
@@ -181,24 +181,66 @@ onMounted(() => {
   <!-- Connecting -->
   <div
     id="galleries"
-    class="bg-[#F7D519] -mt-2 pt-14 lg:pt-32 px-20 border-b-4 border-black relative">
-    <h1 class="text-center font-bebas font-bold text-5xl lg:text-8xl text-[#1B1719] z-50">
+    class="bg-[#F7D519] -mt-2 pt-16 pb-16 lg:pb-0 lg:pt-32 px-20 border-b-4 border-black relative">
+    <h1
+      class="text-center font-bebas font-bold text-5xl lg:text-8xl text-[#1B1719] z-50">
       Connecting the dots for an engaging <br />
       collaboration experiences
     </h1>
 
-    <div id="chain" class="absolute top-4  left-5 lg:left-10">
+    <div id="chain" class="absolute top-4 left-5 lg:left-10">
       <!-- <IconChain /> -->
-       <img class="w-32 lg:w-72 opacity-2 lg:opacity-100" src="../assets/Chain.svg" alt="">
+      <img
+        class="w-32 lg:w-72 opacity-25 lg:opacity-100"
+        src="../assets/Chain.svg"
+        alt="" />
     </div>
 
     <div id="cling" class="absolute top-10 lg:top-20 right-5 lg:right-48">
-      <img class="w-16 lg:w-32" src="../assets/Cling.png" alt="">
+      <img class="w-16 lg:w-32" src="../assets/Cling.png" alt="" />
     </div>
 
-    <div class="mt-20">
-      <img class="" src="../assets/HandConnect.png" alt="">
+    <div class="mt-10 lg:mt-20 lg:grid lg:grid-cols-3 lg:grid-flow-col">
+      <div class="relative lg:top-28">
+        <img class="w-[500px]" src="../assets/HandConnect.png" alt="" />
+      </div>
+
+      <p
+        class="mt-5 lg:mt-0 text-center lg:text-left lg:leading-relaxed font-inria font-bold text-xl lg:text-[30px]">
+        Together we build DNCC and become students who are more disciplined,
+        accomplished, creative and have noble character.
+        <br />
+        <br />
+        As well as optimizing the ability of members to become a useful
+        generation.
+      </p>
+
+      <div class="hidden lg:block relative">
+        <img class="ml-32" src="../assets/Dollar.svg" alt="" />
+      </div>
     </div>
-    
+  </div>
+
+  <!-- Devisi -->
+  <div
+    id="devisi"
+    class="bg-[#8955FF] -mt-2 pt-10 lg:pt-44 pb-10 px-20 border-b-4 border-black">
+    <h1
+      class="text-center font-bebas font-bold text-5xl lg:text-8xl text-white z-50">
+      Connecting the dots for an engaging <br />
+      collaboration experiences
+    </h1>
+
+    <p class="font-inria text-center text-white font-thin lg:text-[27px] mt-10">
+      “Pursue your passion, select a mission, and elevate your skills to new
+      heights.”
+    </p>
+
+    <div class="mt-20">
+      <div class="card bg-yellow-200 w-72 h-64 border-4 border-black relative">
+        <IconWeb />
+        <p class="absolute font-inria font-bold text-3xl bottom-0 mb-10 ml-10">Web Dev</p>
+      </div>
+    </div>
   </div>
 </template>
