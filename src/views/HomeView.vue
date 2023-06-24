@@ -273,43 +273,84 @@ onMounted(() => {
   </marquee>
 
   <!-- photos galleries -->
-  <div
-    id="galleries"
-    class="bg-[#A4E7C6] -mt-2 py-20 px-5 lg:px-20 gap-4 lg:gap-12 flex flex-col lg:flex-row overflow-x-auto justify-center">
+  <div id="galleries" class="bg-[#A4E7C6] -mt-2 py-20 px-5 lg:px-20">
     <div
-      data-aos="fade-right"
-      class="rounded-xl shadow-lg overflow-hidden mb-10 w-full lg:w-[620px] h-[360px] font-inria font-semibold bg-slate-900 sm:mb-0">
-      <img
-        src="https://user-images.githubusercontent.com/80609220/248239155-65b9c3f9-34d6-411d-82a5-5cedb546f8fc.jpg"
-        class="w-full h-72 object-cover px-5 pt-5"
-        alt="" />
-      <div class="px-6 py-4 text-center">
-        <div class="font-bold text-xl mb-2 text-white">
-          Basic Training For Next Generation
+      class="gap-4 lg:gap-12 flex flex-col lg:flex-row overflow-x-auto justify-center">
+      <div
+        data-aos="fade-right"
+        class="rounded-xl shadow-lg overflow-hidden mb-10 w-full lg:w-[620px] h-[360px] font-inria font-semibold bg-slate-900 sm:mb-0">
+        <!-- src="https://user-images.githubusercontent.com/80609220/248239155-65b9c3f9-34d6-411d-82a5-5cedb546f8fc.jpg" -->
+        <img
+          src="https://user-images.githubusercontent.com/80609220/248463731-54637c74-18f7-40b5-a77b-34ecac2a80f3.JPG"
+          class="w-full h-72 object-cover px-5 pt-5"
+          alt="" />
+        <div class="px-6 py-4 text-center">
+          <div class="font-bold text-xl mb-2 text-white">
+            Basic Training For Next Generation
+          </div>
+        </div>
+      </div>
+      <div
+        data-aos="fade-left"
+        class="rounded-xl shadow-lg overflow-hidden mb-10 w-full lg:w-[620px] h-[360px] font-inria font-semibold bg-slate-900 sm:mb-0">
+        <img
+          src="https://user-images.githubusercontent.com/80609220/248464749-b0c9746c-ea28-417d-a009-d8a902d38186.JPG"
+          class="w-full h-72 object-cover px-5 pt-5"
+          alt="" />
+        <div class="px-6 py-4 text-center">
+          <div class="font-bold text-xl mb-2 text-white">DINACOM 2023</div>
+        </div>
+      </div>
+      <div
+        data-aos="zoom-in-down"
+        class="rounded-xl shadow-lg overflow-hidden mb-10 w-full lg:w-[620px] h-[360px] font-inria font-semibold bg-slate-900 sm:mb-0">
+        <img
+          src="https://user-images.githubusercontent.com/80609220/248238654-5dd990c2-e684-412d-8229-1b190f33a4a5.jpg"
+          class="w-full h-72 object-cover px-5 pt-5"
+          alt="" />
+        <div class="px-6 py-4 text-center">
+          <div class="font-bold text-xl mb-2 text-white">
+            DNCC Goes to School
+          </div>
         </div>
       </div>
     </div>
     <div
-      data-aos="zoom-in-down"
-      class="rounded-xl shadow-lg overflow-hidden mb-10 w-full lg:w-[620px] h-[360px] font-inria font-semibold bg-slate-900 sm:mb-0">
-      <img
-        src="https://user-images.githubusercontent.com/80609220/248238654-5dd990c2-e684-412d-8229-1b190f33a4a5.jpg"
-        class="w-full h-72 object-cover px-5 pt-5"
-        alt="" />
-      <div class="px-6 py-4 text-center">
-        <div class="font-bold text-xl mb-2 text-white">DNCC Goes to School</div>
+      class="mt-10 gap-4 lg:gap-12 flex flex-col lg:flex-row overflow-x-auto justify-center">
+      <div
+        data-aos="zoom-in-down"
+        class="rounded-xl shadow-lg overflow-hidden mb-10 w-full lg:w-[620px] h-[360px] font-inria font-semibold bg-slate-900 sm:mb-0">
+        <img
+          src="https://user-images.githubusercontent.com/80609220/248464193-656e9a6e-f5fe-4ec7-930b-09ad0e5a282a.JPEG"
+          class="w-full h-72 object-cover px-5 pt-5"
+          alt="" />
+        <div class="px-6 py-4 text-center">
+          <div class="font-bold text-xl mb-2 text-white">DNCC Berbagi</div>
+        </div>
       </div>
-    </div>
-    <div
-      data-aos="fade-left"
-      class="rounded-xl shadow-lg overflow-hidden mb-10 w-full lg:w-[620px] h-[360px] font-inria font-semibold bg-slate-900 sm:mb-0">
-      <img
-        src="https://user-images.githubusercontent.com/80609220/248237766-99960d7f-9e0e-471a-966f-e5a17bddb607.jpg"
-        class="w-full h-72 object-cover px-5 pt-5"
-        alt="" />
-      <div class="px-6 py-4 text-center">
-        <div class="font-bold text-xl mb-2 text-white">
-          Developer Bootcamp DNCC X KodingWorks
+      <div
+        data-aos="fade-right"
+        class="rounded-xl shadow-lg overflow-hidden mb-10 w-full lg:w-[620px] h-[360px] font-inria font-semibold bg-slate-900 sm:mb-0">
+        <img
+          src="https://user-images.githubusercontent.com/80609220/248463737-1568cfa0-018c-47b0-a2ca-4a9163a52ba8.jpg"
+          class="w-full h-72 object-cover px-5 pt-5"
+          alt="" />
+        <div class="px-6 py-4 text-center">
+          <div class="font-bold text-xl mb-2 text-white">Ultah DNCC ke-32</div>
+        </div>
+      </div>
+
+      <div
+        data-aos="fade-left"
+        class="rounded-xl shadow-lg overflow-hidden mb-10 w-full lg:w-[620px] h-[360px] font-inria font-semibold bg-slate-900 sm:mb-0">
+        <img
+          src="https://user-images.githubusercontent.com/80609220/248237766-99960d7f-9e0e-471a-966f-e5a17bddb607.jpg"
+          class="w-full h-72 object-cover px-5 pt-5"
+          alt="" />
+        <div class="px-6 py-4 text-center">
+          <div class="font-bold text-xl mb-2 text-white">
+            Developer Bootcamp DNCC X KodingWorks
+          </div>
         </div>
       </div>
     </div>
