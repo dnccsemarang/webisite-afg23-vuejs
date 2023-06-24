@@ -539,7 +539,7 @@ onMounted(() => {
       <div class="hidden lg:block">
         <h1
           data-aos="fade-down"
-          class="font-bebas font-bold text-8xl lg:text-[170px] xl:text-[20em] text-black z-50">
+          class="font-bebas font-bold text-8xl lg:text-[170px] xl:text-[19em] text-black z-50">
           LET'S JOIN
         </h1>
         <div class="flex justify-between">
