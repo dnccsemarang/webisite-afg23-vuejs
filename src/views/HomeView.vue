@@ -211,33 +211,34 @@ onMounted(() => {
   <div
     id="main"
     class="bg-[#FEE9CE] h-full -mt-2 px-5 pb-20 lg:pb-32 lg:px-20 relative">
-    <div class="hidden lg:block">
+    <!-- <div class="hidden lg:block">
       <div
-        class="text-hero text-[4em] lg:text-[8em] font-libre font-bold pt-10 flex flex-col lg:flex-row relative -top-[2em]">
+        class="text-hero md:text-[8em] md:text-red-200 lg:text-yellow-50 lg:text-[8em] font-libre font-bold pt-10 flex flex-col lg:flex-row relative -top-[2em]">
         <div class="el pr-8">Discover</div>
         <div class="el pr-8">the</div>
         <div class="el pr-8">Best</div>
       </div>
       <div
-        class="text-hero-2 text-[4em] lg:text-[8em] font-libre font-bold pt-10 flex flex-col lg:flex-row relative -top-[4em]">
+        class="text-hero-2 md:text-[8em] md:text-red-200 lg:text-yellow-50 lg:text-[8em] font-libre font-bold pt-10 flex flex-col lg:flex-row relative -top-[4em]">
         <div class="el pr-8">Potential</div>
         <div class="el pr-8">Within</div>
         <div class="el pr-8">You !</div>
       </div>
-    </div>
-    <div class="block lg:hidden">
+    </div> -->
+    <div class="">
       <div
-        class="text-hero-sm text-[4em] lg:text-[8em] font-libre font-bold pt-10 relative -left-64">
+        class="text-hero-sm text-[4em] lg:text-[5em] xl:text-[9em] font-libre font-bold pt-10 relative -left-64">
         Discover the Best Potential Within You !
       </div>
     </div>
 
     <div class="mt-20 relative">
       <div class="flex relative">
-        <a href="#register"
+        <a
+          href="#register"
           class="btn-join px-20 py-7 border-2 border-black bg-white text-[30px] font-inria font-bold z-10 hover:translate-x-2 hover:translate-y-2 transition">
           <p class="text-join">Let's Join</p>
-      </a>
+        </a>
         <button
           class="px-20 py-7 border-2 border-black bg-white text-[30px] font-inria font-bold text-white absolute top-2 left-2">
           Let's Join
@@ -533,31 +534,31 @@ onMounted(() => {
     <div class="mt-16" id="ff-compose"></div>
   </div>
 
-  <div id="register" class="bg-[#59CB35] py-20 px-5 lg:px-20">
+  <div id="" class="bg-[#59CB35] py-20 px-5 lg:px-20">
     <div class="lg:flex justify-center">
       <div class="hidden lg:block">
         <h1
           data-aos="fade-down"
-          class="font-bebas font-bold text-8xl lg:text-[21em] text-black z-50">
+          class="font-bebas font-bold text-8xl lg:text-[170px] xl:text-[20em] text-black z-50">
           LET'S JOIN
         </h1>
         <div class="flex justify-between">
           <h1
             data-aos="fade-right"
             data-aos-delay="300"
-            class="hidden lg:block font-bebas font-bold text-8xl lg:text-[30em] text-black z-50">
+            class="hidden lg:block font-bebas font-bold text-8xl lg:text-[13em] xl:text-[28em] text-black z-50">
             👀
           </h1>
           <h1
             data-aos="fade-down"
-            class="and font-bebas font-bold text-8xl lg:text-[30em] text-black z-50">
+            class="and font-bebas font-bold text-8xl lg:text-[13em] xl:text-[25em] text-black z-50">
             AND
           </h1>
         </div>
         <h1
           data-aos="fade-down"
           data-aos-delay="500"
-          class="font-bebas font-bold text-8xl lg:text-[8em] text-black z-50 tracking-wide">
+          class="font-bebas font-bold text-8xl lg:text-[4em] xl:text-[8em] text-black z-50 tracking-wide">
           MAKE A CHANGE FOR YOU
         </h1>
       </div>
@@ -570,9 +571,9 @@ onMounted(() => {
       </div>
       <div class="relative mt-10 lg:mt-0">
         <div
-          class="text-center bg-white w-full lg:h-[57em] lg:ml-5 rounded-[40px] p-5 lg:p-20 border-4 border-black relative z-10 lg:hover:translate-x-6 hover:translate-y-6 transition">
+          class="text-center bg-white w-full h-full lg:ml-5 rounded-[40px] p-5 border-4 border-black relative z-10 lg:hover:translate-x-6 hover:translate-y-6 transition">
           <h1
-            class="font-inria text-2xl lg:text-4xl font-bold leading-relaxed lg:mt-32">
+            class="font-inria text-2xl lg:text-4xl font-bold leading-relaxed lg:mt-10 xl:mt-32">
             TALK WITH<br />
             CONTACT PERSON
           </h1>
@@ -589,7 +590,7 @@ onMounted(() => {
           </p>
         </div>
         <div
-          class="bg-[#A4E48F] w-full lg:h-[57em] lg:ml-5 rounded-[40px] p-20 border-4 border-black absolute lg:-right-11 top-6">
+          class="bg-[#A4E48F] w-full h-full lg:ml-5 rounded-[40px] p-20 border-4 border-black absolute lg:-right-11 top-6">
           <h1>
             TALK WITH<br />
             CONTACT PERSON
